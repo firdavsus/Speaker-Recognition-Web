@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speaker Recognition</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    button {
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      margin-top: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    input[type="text"] {
+      padding: 0.6rem;
+      width: calc(100% - 1.2rem);
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    p.output, p.reg-output {
+      font-weight: bold;
+      margin-top: 1rem;
+      color: #27ae60;
+    }
+
+    hr {
+      margin: 2rem 0;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎙️ Who Is Speaking?</h1>
+
+  <div class="center">
+    <button class="record identify">🔍 Record & Identify</button>
+    <p class="output"></p>
+  </div>
+
+  <hr>
+
+  <h2>👤 Register New Speaker</h2>
+  <div class="center">
+    <input type="text" id="new-name" placeholder="Enter speaker name" />
+    <br>
+    <button class="record register">➕</button>
+    <p class="reg-output"></p>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
